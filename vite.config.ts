@@ -7,14 +7,14 @@ const projectRoot = process.env.PROJECT_ROOT || import.meta.dirname;
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/Nexxport/",  // <= WAJIB ADA!
+  base: "/Nexxport/",
   plugins: [react(), tailwindcss()],
   build: {
     sourcemap: true,
   },
   resolve: {
     alias: {
-      '@': resolve(projectRoot, 'src')
-    }
+      '@': resolve(projectRoot, 'src'),
+    },
   },
-})
+});
